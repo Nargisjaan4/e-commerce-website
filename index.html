@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple eCommerce</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Online Store</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <div class="product" id="product-1">
+        <img src="product1.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>$25.00</p>
+        <button onclick="addToCart('product-1')">Add to Cart</button>
+      </div>
+      <div class="product" id="product-2">
+        <img src="product2.jpg" alt="Product 2">
+        <h2>Product 2</h2>
+        <p>$30.00</p>
+        <button onclick="addToCart('product-2')">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Simple eCommerce Website</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
